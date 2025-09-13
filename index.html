@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <title>AR PWA MVP</title>
+
+    <!-- Tailwind CDN (cukup untuk MVP) -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <link rel="manifest" href="./manifest.json" />
+    <meta name="theme-color" content="#0f172a" />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body class="bg-slate-900 text-white min-h-screen">
+    <!-- Overlay jika dibuka di desktop -->
+    <div id="desktop-block" class="fixed inset-0 z-50 items-center justify-center bg-slate-900 text-center p-6">
+      <div class="max-w-md">
+        <h1 class="text-2xl font-bold mb-2">Mobile/Tablet Only</h1>
+        <p class="opacity-80">
+          Aplikasi ini hanya untuk perangkat mobile & tablet. Silakan buka dari ponsel atau iPad untuk menggunakannya.
+        </p>
+      </div>
+    </div>
+
+    <!-- App -->
+    <div id="app" class="flex flex-col min-h-screen">
+      <!-- Header -->
+      <header class="p-4">
+        <h1 class="text-xl font-semibold">AR Heritage</h1>
+      </header>
+
+      <!-- Main menu -->
+      <main class="flex-1 p-4 space-y-6">
+        <section class="space-y-2">
+          <h2 class="text-3xl font-bold">Jelajahi Candi dalam AR</h2>
+          <p class="text-slate-300">Lihat model 3D candi secara interaktif melalui kamera perangkat Anda.</p>
+        </section>
+
+        <nav class="grid gap-3">
+          <a
+            href="./ar.html"
+            class="rounded-xl px-5 py-4 bg-indigo-500/90 hover:bg-indigo-500 active:translate-y-px transition text-center font-medium"
+          >
+            Start AR
+          </a>
+          <button class="rounded-xl px-5 py-4 bg-slate-800 hover:bg-slate-700 transition text-center">
+            Gallery (soon)
+          </button>
+          <button class="rounded-xl px-5 py-4 bg-slate-800 hover:bg-slate-700 transition text-center">
+            About (soon)
+          </button>
+        </nav>
+      </main>
+
+      <!-- Footer -->
+      <footer class="p-4 text-xs text-slate-400 text-center">© 2025 AR Heritage MVP Malang</footer>
+    </div>
+
+    <script src="./js/main.js"></script>
+  </body>
+</html>

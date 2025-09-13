@@ -1,0 +1,12 @@
+/* Overlay blokir desktop */
+#desktop-block {
+  display: none;
+}
+@media (min-width: 1025px) {
+  #desktop-block {
+    display: flex;
+  }
+  #app {
+    display: none;
+  }
+}
